@@ -7,6 +7,8 @@ To use this application follow these steps:
 3. Compile and run 'main.py'
 4. See the application running on http://127.0.0.1:5000
 
+Checkout the 'xrdpinstallation.py' for XRDP setup commands and instructions.
+
 You can also deploy this application on a server of your choice or just run it on localhost.
 Either way, we hope you find it helpful!
 
