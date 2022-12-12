@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:#fff9ed;font-family:candara;">
+<h1>Contact Form</h1>
+<form class="cf" style="max-width: 600px;
+    text-align: center;
+    margin: 20px auto;">
+
+  <div class="half left cf" style="border:0; outline:0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    float: left;
+    margin-bottom: 1em;
+    width: 50%;
+    height: 80px;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;">
+
+    <input type="text" id="input-name" placeholder="Name" style="height: 30px;">
+    <input type="email" id="input-email" placeholder="Email address" style="height: 30px;">
+    <input type="text" id="input-subject" placeholder="Subject" style="height: 30px;">
+  </div>
+
+  <div class="half right cf" style="border:0; outline:0;
+    padding: 2em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;">
+    <textarea name="message" type="text" id="input-message" placeholder="Message" style="height: 120px;"></textarea>
+  </div>
+  <input type="submit" value="Submit" id="input-submit" style="color: white;
+    background: #e74c3c;
+    cursor: pointer;">
+</form>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Merriweather);
+    $red: #e74c3c;
+
+    *,
+    *:before,
+    *:after {
+    @include box-sizing(border-box);
+    }
+
+
+    h1 {
+    text-align: center;
+    color: #a8a8a8;
+    @include text-shadow(1px 1px 0 rgba(white, 1));
+    }
+
+    input-submit {
+
+    &:hover {
+       @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+    }
+    }
+
+    .right { width: 50%; }
+
+    .left {
+         margin-right: 2%;
+    }
+
+
+    @media (max-width: 480px) {
+      .half {
+         width: 100%;
+         float: none;
+         margin-bottom: 0;
+      }
+    }
+
+
+    }
+</style>
+</body>
+</html>
